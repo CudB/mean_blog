@@ -8,10 +8,6 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('BlogCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('BlogCtrl', function ($scope, Post) {
+    $scope.posts = Post.getList().$object;
   });
