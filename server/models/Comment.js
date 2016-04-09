@@ -21,10 +21,6 @@ var CommentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  parentPost: {
-    type: String,
-    required: true
-  },
   status: {
     type: String,
     enum: status,

@@ -8,10 +8,11 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('PostAddCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('PostAddCtrl', function ($scope, Post, $location) {
+    $scope.post = {};
+    $scope.savePost = function() {
+      Post.post($scope.post).then(function() {
+        $location.path('/posts');
+      });
+    };
   });
