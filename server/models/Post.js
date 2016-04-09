@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var Comment = require('./Comment');
 
 // Enum for status
 var status = 'draft published outdated'.split(' ');
@@ -21,6 +22,9 @@ var PostSchema = new mongoose.Schema({
     type: String,
     enum: status,
     required: true
+  },
+  comments: {
+    type: [Comment]
   },
   tags: {
     type: [String],

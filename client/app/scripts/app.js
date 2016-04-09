@@ -33,6 +33,11 @@ angular
         controller: 'BlogCtrl',
         controllerAs: 'blog'
       })
+      .when('/create/post', {
+        templateUrl: 'views/post-add.html',
+        controller: 'PostAddCtrl',
+        controllerAs: 'postAdd'
+      })
       .otherwise({
         redirectTo: '/'
       });
