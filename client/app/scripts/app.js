@@ -38,6 +38,21 @@ angular
         controller: 'PostAddCtrl',
         controllerAs: 'postAdd'
       })
+      .when('/post/:id', {
+        templateUrl: 'views/post-view.html',
+        controller: 'PostViewCtrl',
+        controllerAs: 'postView'
+      })
+      .when('/post/:id/delete', {
+        templateUrl: 'views/post-delete.html',
+        controller: 'PostDeleteCtrl',
+        controllerAs: 'postDelete'
+      })
+      .when('/post/:id/edit', {
+        templateUrl: 'views/post-edit.html',
+        controller: 'PostEditCtrl',
+        controllerAs: 'postEdit'
+      })
       .otherwise({
         redirectTo: '/'
       });
