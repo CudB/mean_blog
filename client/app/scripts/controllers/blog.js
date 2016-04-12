@@ -9,5 +9,6 @@
  */
 angular.module('clientApp')
   .controller('BlogCtrl', function ($scope, Post) {
+    $scope.blog = true;
     $scope.posts = Post.getList().$object;
   });
