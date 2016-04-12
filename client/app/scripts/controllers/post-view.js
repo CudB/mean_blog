@@ -8,10 +8,7 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('PostViewCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('PostViewCtrl', function ($scope, $routeParams, Post) {
+    $scope.viewPost = true;
+    $scope.post = Post.one($routeParams.id).get().$object;
   });

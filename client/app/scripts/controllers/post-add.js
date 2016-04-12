@@ -17,4 +17,7 @@ angular.module('clientApp')
         $location.path('/blog');
       });
     };
+    $scope.back = function() {
+      $location.path('/blog/');
+    }
   });
