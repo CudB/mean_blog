@@ -1,5 +1,3 @@
-<a class="btn btn-primary" href="/#/create/post"><span class="glyphicon-plus"></span> Create Post </a>
-<br>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -15,16 +13,6 @@
       <td>{{ post.title }}</td>
       <td>{{ post.date | date:'yyyy-MM-dd' }}</td>
       <td>{{ post.content }}</td>
-      <td>
-        <div class="button-group">
-          <a ng-href="/#/post/{{ post._id }}/edit" class="btn btn-default">
-            <span class="glyphicon glyphicon-edit"></span>
-          </a>
-          <a ng-href="/#/post/{{ post._id }}/delete" class="btn btn-danger">
-            <span class="glyphicon glyphicon-remove-circle"></span>
-          </a>
-        </div>
-      </td>
     </tr>
   </tbody>
 </table>

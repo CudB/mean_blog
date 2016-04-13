@@ -14,10 +14,7 @@ angular.module('clientApp')
       $scope.post.date = new Date(); 
       $scope.post.status = 'draft';
       Post.post($scope.post).then(function() {
-        $location.path('/blog');
+        $location.path('/manage');
       });
     };
-    $scope.back = function() {
-      $location.path('/blog/');
-    }
   });

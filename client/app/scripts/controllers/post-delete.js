@@ -12,7 +12,7 @@ angular.module('clientApp')
     $scope.post = Post.one($routeParams.id).get().$object;
     $scope.deletePost = function() {
       $scope.post.remove().then(function() {
-        $location.path('/blog');
+        $location.path('/manage');
       });
     };
     $scope.back = function() {

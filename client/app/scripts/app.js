@@ -53,6 +53,11 @@ angular
         controller: 'PostEditCtrl',
         controllerAs: 'postEdit'
       })
+      .when('/manage', {
+        templateUrl: 'views/manage.html',
+        controller: 'ManageCtrl',
+        controllerAs: 'manage'
+      })
       .otherwise({
         redirectTo: '/'
       });
