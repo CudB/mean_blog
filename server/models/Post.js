@@ -26,6 +26,10 @@ var PostSchema = new mongoose.Schema({
   comments: {
     type: [Comment]
   },
+  author: {
+    type: String,
+    required: true
+  },
   tags: {
     type: [String],
     required: false
