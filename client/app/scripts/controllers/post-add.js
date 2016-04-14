@@ -11,7 +11,7 @@ angular.module('clientApp')
   .controller('PostAddCtrl', function ($scope, Post, $location) {
     $scope.post = {};
     $scope.savePost = function() {
-      $scope.post.tags = $scope.tags.replace(/[\s]/g, '').split(',');
+      $scope.post.tags = $scope.post.tags.replace(/[\s]/g, '').split(',');
       $scope.post.date = new Date(); 
       $scope.post.status = 'draft';
       Post.post($scope.post).then(function() {
