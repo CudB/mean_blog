@@ -1,9 +1,9 @@
 <ng-include src="'views/post-nav.html'"></ng-include>
-<h3>{{ post.title }}</h3>
-<p>Published by {{post.author}} on {{ post.date | date:'MMMM dd, yyyy '}}</p>
 
-<div class="post-content">
-  <p>{{ post.content }}</p>
+<div class="post-view">
+  <h2 class="title">{{ post.title }}</h3>
+  <p class="time">{{ post.date | date:'MMMM dd, yyyy '}}</p>
+  <img class="header" ng-src="{{post.image_url}}" alt="Post Banner"/>
+  <p class="content">{{ post.content }}</p>
+  <p>{{ post.tags }}</p>
 </div>
-
-<p>{{ post.tags }}</p>
