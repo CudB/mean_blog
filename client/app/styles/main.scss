@@ -90,7 +90,7 @@ body {
   }
 }
 
-/* Post view*/
+/* Post view */
 .post-view {
   /* Post header */
   h2.title {
@@ -120,5 +120,6 @@ body {
   img.header {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
   }
 }
