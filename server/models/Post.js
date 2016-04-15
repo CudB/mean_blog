@@ -30,6 +30,9 @@ var PostSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  image_url: {
+    type: String
+  },
   tags: {
     type: [String],
     required: false
