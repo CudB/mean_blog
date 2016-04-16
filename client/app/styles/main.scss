@@ -125,14 +125,17 @@ body {
   }
   /* Post tags */
   .btn {
-    padding: 2px 2px;
+    float: right;
+    padding: 4px 4px;
     margin-right: 5px;
+    height: 19px;
+    line-height: 19px;
   }
-  .tag {
+  .tag{
     text-align: center;
-    color: rgba(163, 163, 163, 1);
+    color: rgba(140, 140, 140, 1);
     font: normal 9px Brandon, 'Open Sans', sans-serif;
     text-transform: uppercase;
-    letter-spacing: .32em;
+    letter-spacing: .15em;
   }
 }
