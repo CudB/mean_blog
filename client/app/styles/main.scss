@@ -90,13 +90,8 @@ body {
   }
 }
 
-/* Index view */
-.index-view {
-  
-}
-
 /* Post view */
-.post-view {
+.post-view, .index-view{
   /* Post header */
   h2.title {
     font-family: Brandon-black, 'Open Sans', sans-serif;
