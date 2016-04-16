@@ -70,7 +70,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 900px;
   }
 
   /* Remove the padding we set earlier */
@@ -110,6 +110,7 @@ body {
       text-transform: uppercase;
       letter-spacing: .32em;
   }
+  /* Post content */
   p.content {
       white-space: pre-wrap;
       text-align: justify;
@@ -121,5 +122,17 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 8px;
+  }
+  /* Post tags */
+  .btn {
+    padding: 2px 2px;
+    margin-right: 5px;
+  }
+  .tag {
+    text-align: center;
+    color: rgba(163, 163, 163, 1);
+    font: normal 9px Brandon, 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .32em;
   }
 }

@@ -3,5 +3,5 @@
   <p class="time">{{ post.date | date:'MMMM dd, yyyy '}}</p>
   <img class="header" ng-src="{{post.image_url}}" alt="Post Banner"/>
   <p class="content">{{ post.content | limitTo: 400}}</p>
-  <p>{{ post.tags }}</p>
+  <a class="btn tag" ng-repeat="tag in post.tags">{{ tag }}</p>
 </div>
