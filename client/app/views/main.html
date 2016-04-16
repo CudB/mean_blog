@@ -2,7 +2,7 @@
   <h2 class="title">{{ post.title }}</h3>
   <p class="time">{{ post.date | date:'MMMM dd, yyyy '}}</p>
   <img class="header" ng-src="{{post.image_url}}" alt="Post Banner" ng-click="viewPost()"/>
-  <p class="content">{{ post.content | limitTo: 400}}</p>
+  <p class="content">{{ post.content | limitTo: 400}}...</p>
   <a class="link" ng-href="/#/post/{{ post._id }}">Read More</a>
   <a class="btn btn-default tag" ng-repeat="tag in post.tags">{{ tag }}</a>
   <br>
