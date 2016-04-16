@@ -11,7 +11,8 @@
 angular
   .module('clientApp', [
     'ngRoute',
-    'restangular'
+    'restangular',
+    'clientFilters'
   ])
   .config(function ($routeProvider, RestangularProvider) {
 
