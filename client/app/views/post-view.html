@@ -1,5 +1,3 @@
-<ng-include src="'views/post-nav.html'"></ng-include>
-
 <div class="post-view">
   <h2 class="title">{{ post.title }}</h3>
   <p class="time">{{ post.date | date:'MMMM dd, yyyy '}}</p>
@@ -8,3 +6,6 @@
   <a class="btn btn-default tag" ng-repeat="tag in post.tags">{{ tag }}</a>
   <br>
 </div>
+<h3> Comments </h3>
+<ng-include src="'views/comment-add.html'"></ng-include>
+<ng-include src="'views/comment-view.html'"></ng-include>

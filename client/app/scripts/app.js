@@ -63,13 +63,23 @@ angular
         redirectTo: '/'
       });
   })
-  .factory('BlogRestangular', function(Restangular) {
+  .factory('PostRestangular', function(Restangular) {
     return Restangular.withConfig(function(RestangularConfigurer) {
       RestangularConfigurer.setRestangularFields({
         id: '_id'
       });
     });
   })
-  .factory('Post', function(BlogRestangular) {
-    return BlogRestangular.service('post');
+  .factory('Post', function(PostRestangular) {
+    return PostRestangular.service('post');
+  })
+  .factory('CommentRestangular', function(Restangular) {
+    return Restangular.withConfig(function(RestangularConfigurer) {
+      RestangularConfigurer.setRestangularFields({
+        id: '_id'
+      });
+    });
+  })
+  .factory('Comment', function(CommentRestangular) {
+    return CommentRestangular.service('comment');
   });

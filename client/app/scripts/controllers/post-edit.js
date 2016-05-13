@@ -9,7 +9,6 @@
  */
 angular.module('clientApp')
   .controller('PostEditCtrl', function ($scope, $location, $routeParams, Post) {
-    $scope.editPost = true;
     $scope.post = {};
     Post.one($routeParams.id).get().then(function(post) {
       $scope.post = post;

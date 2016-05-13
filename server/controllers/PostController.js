@@ -1,4 +1,5 @@
 var Resource = require('resourcejs');
+var Multer = require('multer');
 
 module.exports = function(app, route) {
 

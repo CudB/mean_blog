@@ -23,9 +23,26 @@ var PostSchema = new mongoose.Schema({
     enum: status,
     required: true
   },
-  comments: {
-    type: [Comment]
-  },
+  comments: 
+    [{
+      author: {
+        type: String,
+        required: true
+      },
+      content: {
+        type: String,
+        required: true
+      },
+      date: {
+        type: String,
+        required: true
+      },
+      email: {
+        type: String,
+        required: true
+      }
+    }]
+  ,
   author: {
     type: String,
     required: true

@@ -13,11 +13,11 @@ var CommentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  email: {
+  date: {
     type: String,
     required: true
   },
-  parentComment: {
+  email: {
     type: String,
     required: true
   },

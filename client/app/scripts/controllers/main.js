@@ -12,5 +12,5 @@ angular.module('clientApp')
     $scope.posts = Post.getList().$object;
     $scope.viewPost = function (id) {
       $location.path('/post/' + id);
-    }
+    };
   });
