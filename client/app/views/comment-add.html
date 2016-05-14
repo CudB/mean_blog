@@ -13,3 +13,8 @@
   </div>
   <input type="submit" class="btn btn-primary" ng-click="saveComment()" value="Add Comment">
 </form>
+<br>
+<div class="alert alert-success" ng-show="showSuccessAlert">
+   <a ng-click="showSuccessAlert = !showSuccessAlert" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Your comment has been posted
+</div>
